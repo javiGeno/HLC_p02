@@ -1,0 +1,19 @@
+body {
+    background-color: darkolivegreen;
+}
+
+aside {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 4%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.icono {
+    width: 90%;
+    height: 6%;
+    margin-right: 100%;
+}
