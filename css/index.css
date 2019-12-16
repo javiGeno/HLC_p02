@@ -1,38 +1,58 @@
 body {
     background-color: darkolivegreen;
+   /* background: linear-gradient(to bottom right, darkolivegreen, rgb(65, 156, 85));*/
     margin: 0%;
+    
 }
 
 aside {
-    background-color: black;
-    width: 4%;
-    display: inline-block;
-    position: relative;
+    /*background-color: black;*/
+    background: linear-gradient(to bottom , black, rgb(67, 68, 67));
+    width: 5%;
+    float: left;
+    height:523px;
+    border-right: 1px solid rgb(136, 136, 136);
 }
 
-aside p {
-    padding-left: 0%;
-    margin-top: 0%;
-    margin-bottom: 0%;
+aside a {
+    
     border-bottom: 1px solid rgb(136, 136, 136);
+    height: 70px;
+    display: block;
+    padding: 10%;
+     
 }
+
+
 
 .icono {
-    height: 80%;
-    width: 80%;
-    padding: 7%;
+    
+    height: 70px;
+    width: 100%;
+   
+}
+
+.icono:hover
+{
+    height: 65px;
+    width: 95%;
 }
 
 nav {
-    background-color: black;
-    height: 8%;
-    width: 93%;
+    background-color:black;
+    height: 70px; 
+    width: 100%;
     border-bottom: 1px solid rgb(136, 136, 136);
-    color: palevioletred;
-    padding-left: 2%;
-    display: inline;
+    color:palevioletred;
+    float: left;
+    padding: 5px;
+    
 }
 
-nav p {
-    display: inline;
+nav a img{ 
+
+    height: 70px;
+    width: 4%;
+
 }
+
