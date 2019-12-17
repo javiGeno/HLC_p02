@@ -1,38 +1,118 @@
 body {
-    background-color: darkolivegreen;
+    background-color:darkgray;
     margin: 0%;
+    
 }
 
 aside {
-    background-color: black;
-    width: 4%;
-    display: inline-block;
-    position: relative;
+    
+    background: linear-gradient(to bottom , black, rgb(67, 68, 67));
+    width: 5%;
+    float: left;
+    height:800px;
+    border-right: 1px solid rgb(136, 136, 136);
+    box-shadow: 3px 3px 8px black;
 }
 
-aside p {
-    padding-left: 0%;
-    margin-top: 0%;
-    margin-bottom: 0%;
+aside a {
+    
     border-bottom: 1px solid rgb(136, 136, 136);
+    height: 70px;
+    display: block;
+    padding: 10%;
+    clear:right;
+     
 }
+
+.listaIconos {
+
+    list-style-type:none;
+    float: right;
+    width: 100%;
+    
+    
+}
+
+.listaIconos li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.listaIconos ul li{
+    display: none;
+    border:1px solid rgb(136, 136, 136) ;
+    background-color: black;
+    color: white;
+    margin-left: -50px;
+    padding:5%;
+    transition-property: background-color;
+    transition-duration: 2s;
+    
+}
+
+.listaIconos li:hover >ul{
+    display: block;
+    color: white;
+    margin-left: -50px;
+    padding:5%;
+    background-color: gray;  
+}
+
+
+.listaIconos li ul{
+    float: right;
+    position: relative;
+    right: -120px;
+    top: -70px;
+    width: 130%;
+   /* display: none;*/
+    
+}
+
+.listaIconos ul li a{
+    display: inline;
+    text-decoration: none;
+    border: none;
+    color: white;
+    
+}
+
 
 .icono {
-    height: 80%;
-    width: 80%;
-    padding: 7%;
+    
+    height: 70px;
+    width: 100%;
+   
 }
 
+/*.icono:hover
+{
+    height: 65px;
+    width: 98%;
+    
+    
+}*/
+/*--------------------------------------------------------------------------*/
 nav {
-    background-color: black;
-    height: 8%;
-    width: 93%;
+    background-color:black;
+    height: 70px; 
+    width: 100%;
     border-bottom: 1px solid rgb(136, 136, 136);
-    color: palevioletred;
-    padding-left: 2%;
-    display: inline;
+    color:palevioletred;
+    float: left;
+    padding: 5px;
+    box-shadow: 0px 3px 6px black;
+    
+}
+nav a{
+    display: block;
+    width: 4%;
 }
 
-nav p {
-    display: inline;
+nav a img{ 
+
+    height: 70px;
+    width: 100%;
+
 }
+
