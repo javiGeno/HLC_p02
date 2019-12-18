@@ -16,9 +16,17 @@ fieldset
     
 }
 
+#field2 button{
+
+    margin-top: 10%;
+    width: 20%;
+    height: 10%;
+}
+
 #form1{
     
     height: 150px;
+    position: relative;
 }
 
 section
@@ -46,9 +54,10 @@ section
 #form1 [type="submit"]{
    
     position:absolute;
-    bottom: 42%;
-    left: 45%;
+    top: 70%;
+    right: 40%;
  }
+
 
 #cajaTele
 {
