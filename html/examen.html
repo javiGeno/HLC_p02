@@ -15,7 +15,7 @@
 <body>
    
      <section>
-        <fieldset>
+        <fieldset id="field1">
             <legend>DATOS USUARIO</legend>
             <form name="usuario" method="get" id="form1">
                 <div id="cajaNombre">
@@ -49,41 +49,41 @@
             </form>
         </fieldset>
 
-        <fieldset>
+        <fieldset  id="field2">
             <legend>RESPONDE A LAS PREGUNTAS</legend>
             <form name="examen" method="get" id="form2">
                 <label>1-¿Qué es html?</label>
-                <input type="radio" id="correcta1" />HyperText Markup Language<br/>
-                <input type="radio"  />HyperText Mark Lang<br/>
-                <input type="radio" />Hyper Mark Language<br/>
+                <input type="radio" id="correcta1" name=1 />HyperText Markup Language<br/>
+                <input type="radio" name=1 />HyperText Mark Lang<br/>
+                <input type="radio" name=1 />Hyper Mark Language<br/>
                 <br/>
                 <label>2-¿Que nuevas etiquetas incorpora HTML5?</label>
-                <input type="radio"  />&lt;div&gt; , &lt;img&gt; , &lt;body&gt;<br/>
-                <input type="radio" id="correcta2" />&lt;audio&gt; , &lt;video&gt; , &lt;canvas&gt;<br/>
-                <input type="radio" />&lt;audio&gt; , &lt;video&gt; , &lt;div&gt;<br/>
+                <input type="radio" name=2/>&lt;div&gt; , &lt;img&gt; , &lt;body&gt;<br/>
+                <input type="radio" id="correcta2" name=2/>&lt;audio&gt; , &lt;video&gt; , &lt;canvas&gt;<br/>
+                <input type="radio" name=2/>&lt;audio&gt; , &lt;video&gt; , &lt;div&gt;<br/>
                 <br/>
                 <label>3-Funcionalidad de CSS</label>
-                <input type="radio" id="correcta3" />CSS3 sirve para cambiar el aspecto de un sitio web, desde las medidas para los márgenes hasta 
+                <input type="radio" id="correcta3" name=3/>CSS3 sirve para cambiar el aspecto de un sitio web, desde las medidas para los márgenes hasta 
                 las especificaciones para las imágenes y el texto<br/>
-                <input type="radio"  />CSS3 sirve para colocar texto en una página web<br/>
-                <input type="radio"  />Las dos opciones anteriores son incorrectas<br/>
+                <input type="radio"  name=3/>CSS3 sirve para colocar texto en una página web<br/>
+                <input type="radio"  name=3/>Las dos opciones anteriores son incorrectas<br/>
                 <br/>
                 <label>4-¿Cuales son selectores css?</label>
-                <input type="radio" id="correcta4" /> # , . , h1<br/>
-                <input type="radio"  />¿ , . , *<br/>
-                <input type="radio"  />1 , 2 , 3<br/>
+                <input type="radio" id="correcta4" name=4 /> # , . , h1<br/>
+                <input type="radio" name=4 />¿ , . , *<br/>
+                <input type="radio" name=4 />1 , 2 , 3<br/>
                 <br/>
                 <label>5-JavaScript sirve para:</label>
-                <input type="radio" />Especificar el diseño, el estilo y la alineación de las páginas web.<br/>
-                <input type="radio" id="correcta5" />Mejorar la forma en que se comportan las páginas web<br/>
-                <input type="radio" />Permitir agregar contenido a una página web<br/>
+                <input type="radio" name=5/>Especificar el diseño, el estilo y la alineación de las páginas web.<br/>
+                <input type="radio" id="correcta5" name=5/>Mejorar la forma en que se comportan las páginas web<br/>
+                <input type="radio" name=5/>Permitir agregar contenido a una página web<br/>
                 <br/>
-                <label>6-¿En que año aparecio JavaScript?</label>
-                <input type="radio"  />1990<br/>
-                <input type="radio" />2000<br/>
-                <input type="radio" id="correcta6" />1995<br/>
+                <label>6-¿En que año parecio JavaScript?</label>
+                <input type="radio" name=6 />1990<br/>
+                <input type="radio" name=6 />2000<br/>
+                <input type="radio" id="correcta6" name=6 />1995<br/>
 
-                
+                <center><button type="button">Calificar</button></center> 
             </form>
 
         </fieldset>
