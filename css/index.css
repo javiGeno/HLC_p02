@@ -36,6 +36,7 @@ aside a {
     left: -40px;
     top: -15px;
     width: 100%;
+    z-index: 1;
 }
     
     
@@ -58,8 +59,6 @@ aside a {
     padding:5%;
     border-top-right-radius: 10px;
     border-bottom-right-radius:10px;
-    
-    
     
 }
 
@@ -96,8 +95,7 @@ aside a {
     visibility: hidden;
     width: 150%;
     transition: all 0.5s linear;
-    
-   
+
     
 }
 
@@ -139,17 +137,15 @@ nav {
     box-shadow: 0px 3px 8px black;
     
 }
-nav a{
-    display: block;
-    width: 4%;
+
+#tituloNav {
+    color: white;
+    text-align: center;
+    text-shadow: 15px 10px 2px black;
+    font-size: 20px;
 }
 
-nav a img{ 
 
-   
-    width: 100%;
-
-}
 /*---------------------------footer---------------------------*/
 footer{
 
@@ -161,6 +157,22 @@ footer{
     top:700px;
     border-top: 1px solid rgb(136, 136, 136);
     box-shadow: 0px -3px 8px black;
+}
+
+footer p, a{
+    text-align: center;
+    color: white
+}
+
+/*-----------------------------embed----------------------------*/
+
+embed{
+    position: absolute;
+    top: 90px;
+    left: 6%;
+    width: 93%;
+    height: 90%;
+    z-index: 0;
 }
 
 /*-----------------RESPONSIVE---------------------*/
