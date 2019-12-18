@@ -1,0 +1,78 @@
+#form2 label{
+    display: block;
+    margin-bottom: 1%;
+}
+
+#form2 [type="radio"]
+{
+    margin-left: 3%;
+
+}
+
+fieldset
+{
+    padding: 2%;
+    margin: 10%;
+    
+}
+
+#form1{
+    
+    height: 150px;
+}
+
+section
+{
+    
+    height: 100%;
+}
+
+
+#form1 *
+{
+    margin: 1%;
+}
+
+#form1 label{
+    margin-right: 0%;
+    
+}
+
+#form1 div input, select{
+   float: right;
+
+}
+
+#form1 [type="submit"]{
+   
+    position:absolute;
+    bottom: 42%;
+    left: 45%;
+ }
+
+#cajaTele
+{
+    float:left;
+    width: 40%;
+}
+
+#cajaNombre
+{
+   float:left;
+   width: 40%;
+}
+
+#cajaCorreo
+{
+    float:left;
+    width: 40%;
+
+}
+
+#cajaCiudad
+{
+    float:left;
+    width: 40%;
+    
+}
+
