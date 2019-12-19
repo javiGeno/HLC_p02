@@ -16,8 +16,17 @@ fieldset
     
 }
 
+#field1
+{
+    height: 30%;
+    
+}
 
-
+#field2
+{
+    height: 65%;
+    
+}
 
 #form1{
     
@@ -53,31 +62,17 @@ fieldset
 
  
 
-#cajaTele
+.cajaDatos
 {
     float:left;
     width: 40%;
 }
 
-#cajaNombre
+.cajaDatos *
 {
-   float:left;
-   width: 40%;
+    width: 45%;
 }
 
-#cajaCorreo
-{
-    float:left;
-    width: 40%;
-
-}
-
-#cajaCiudad
-{
-    float:left;
-    width: 40%;
-    
-}
 
 #form2
 {
@@ -130,38 +125,51 @@ fieldset
 
 /*-----------------RESPONSIVE---------------------*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 884px) {
 
-    section{
 
-        border-radius: 5px;
-        background-color: blue;
-        color:white;
-        padding: 3%;
-        box-shadow: 3px 3px 8px black;
+    .cajaDatos
+    {
+       display: block;
+       width: 100%;
     }
 
-    #cajaTele
-    {
-       
-        display: inline;
+    #form1 [type="submit"]{
+   
+        position:absolute;
+        font-size: 50%;
+        top: 110%;
+        right: 40%;
+        width: 20%;
+        height: 10%;
     }
 
-    #cajaNombre
+    #field1
     {
-        display: inline;
+    height: 200px;
+    
     }
 
-    #cajaCorreo
+    #field2
     {
-        display: inline;
-
-    }
-
-    #cajaCiudad
-    {
-        display: inline;
+        height: 700px;
         
     }
 
+    #soluciones{
+
+        height: 15%;
+    
+    
+    
+    }
+
+    #botonSoluciones{
+
+        position: absolute;
+        left: 55%;
+        visibility: hidden;
+        font-size: 12px;
+    }
+     
 }

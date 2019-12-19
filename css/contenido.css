@@ -25,3 +25,12 @@ section{
     padding: 3%;
     box-shadow: 3px 3px 8px black;
 }
+
+/*----------------------------CSS videos-----------------------------*/
+
+#videoHTML{
+
+    width: 30%;
+    height: 20%;
+    align-content: center;
+}

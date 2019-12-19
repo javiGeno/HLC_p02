@@ -24,19 +24,19 @@
             <fieldset id="field1">
                 <legend>DATOS USUARIO</legend>
                 <form name="usuario"  id="form1">
-                    <div id="cajaNombre">
+                    <div class="cajaDatos">
                         <label id="n">Nombre</label>
                         <input type="text" id="nom" pattern="[A-Za-z]{4-16}" name="nombre"  autofocus required/>
                     </div>
-                    <div id="cajaTele">
+                    <div class="cajaDatos">
                         <label id="t">Teléfono</label>
                         <input type="tel" id="tel" pattern="[0-9]{9}" maxlength="9" name="Teléfono" />
                     </div>
-                    <div id="cajaCorreo">
+                    <div class="cajaDatos">
                         <label id="ce">Correo electrónico</label>
                         <input type="email"  id="email" name="email" placeholder="example@mail.com" maxlength="50" required/>
                     </div>
-                    <div id="cajaCiudad">
+                    <div class="cajaDatos">
                         <label id="c">Ciudad</label>
                         <select name="ciudades" id="ciud">
                             <option value="defecto" selected>--Elegir opción--</option>
