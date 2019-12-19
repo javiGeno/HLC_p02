@@ -6,13 +6,11 @@ body {
 
 /*---------------------asside---------------------*/
 aside {
-    
-    
     background-color: black;
     width: 5%;
     position: absolute;
-    top:82px;
-    height:617px;
+    top:13.5%;
+    height: 82%;
     border-right: 1px solid rgb(136, 136, 136);
     border-bottom: 1px solid rgb(136, 136, 136);
     box-shadow: 3px 0px 8px black;
@@ -21,12 +19,9 @@ aside {
 
 aside a {
     
-    
     height: 100%;
     display: block;
     padding: 10%;
-   
-     
 }
 
 .listaIconos {
@@ -55,28 +50,31 @@ aside a {
     border:1px solid rgb(136, 136, 136) ;
     background-color: black;
     color: white;
-    margin-left: -50px;
+    margin-left: -90%;
+    margin-right: -100%;
     padding:5%;
     border-top-right-radius: 10px;
     border-bottom-right-radius:10px;
-    
+    opacity: 0;
+    z-index: 2;
+    left: 30%
 }
 
 
 
 .listaIconos ul li:hover{
-    display: block;
     color: white;
-    margin-left: -50px;
+    margin-left: -100%;
+    margin-right: -90%;
     padding:5%;
-    background-color: gray;  
-
+    background-color: gray;
 }
 
 .listaIconos li:hover > ul li{
 
     visibility:visible;
     transition: all 0.5s linear;
+    opacity: 1;
 }
 
 .listaIconos li:hover > ul {
@@ -95,7 +93,6 @@ aside a {
     visibility: hidden;
     width: 150%;
     transition: all 0.5s linear;
-
     
 }
 
@@ -129,13 +126,13 @@ nav {
     
     
     background: linear-gradient(to right , black, rgb(112, 114, 112));
-    height: 70px; 
-    width: 99.3%;
+    height: 12%; 
+    width: 98%;
     border-bottom: 1px solid rgb(136, 136, 136);
     position: absolute;
     padding: 5px;
     box-shadow: 0px 3px 8px black;
-    
+    z-index: 1;
 }
 
 #tituloNav {
@@ -150,18 +147,19 @@ nav {
 footer{
 
     position: absolute;
-    height: 100px;
     background: linear-gradient(to right , black, rgb(112, 114, 112));
-    height: 150px; 
-    width: 99.9%;
-    top:700px;
+    height: 10%; 
+    width: 99%;
+    bottom: 0%;
     border-top: 1px solid rgb(136, 136, 136);
     box-shadow: 0px -3px 8px black;
 }
 
 footer p, a{
     text-align: center;
-    color: white
+    color: white;
+    margin: 0px;
+    font-size: 0.80em;
 }
 
 /*-----------------------------embed----------------------------*/
@@ -171,8 +169,9 @@ embed{
     top: 90px;
     left: 6%;
     width: 93%;
-    height: 90%;
+    height: 77%;
     z-index: 0;
+    border-radius: 30px;
 }
 
 /*-----------------RESPONSIVE---------------------*/
