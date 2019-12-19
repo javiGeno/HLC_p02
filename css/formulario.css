@@ -1,12 +1,12 @@
-#form2 label{
-    display: block;
-    margin-bottom: 1%;
-}
 
-#form2 [type="radio"]
-{
-    margin-left: 3%;
 
+section{
+
+    border-radius: 5px;
+    background-color: black;
+    color:white;
+    padding: 3%;
+    box-shadow: 3px 3px 8px black;
 }
 
 fieldset
@@ -16,12 +16,8 @@ fieldset
     
 }
 
-#field2 button{
 
-    margin-top: 10%;
-    width: 20%;
-    height: 10%;
-}
+
 
 #form1{
     
@@ -29,11 +25,6 @@ fieldset
     position: relative;
 }
 
-section
-{
-    
-    height: 100%;
-}
 
 
 #form1 *
@@ -54,10 +45,13 @@ section
 #form1 [type="submit"]{
    
     position:absolute;
-    top: 70%;
-    right: 40%;
+    top: 80%;
+    right: 45%;
+    width: 15%;
+    height: 20%;
  }
 
+ 
 
 #cajaTele
 {
@@ -85,3 +79,89 @@ section
     
 }
 
+#form2
+{
+    visibility: visible;
+    position:relative;
+}
+
+#form2 label{
+    display: block;
+    margin-bottom: 1%;
+}
+
+#form2 [type="radio"]
+{
+    margin-left: 3%;
+
+}
+
+#form2 [type="button"]
+{
+    bottom: -10%;
+    font-family: 'Lato', sans-serif;
+    width: 20%;
+    height: 5%;
+}
+
+
+#calificacion{
+
+    position: absolute;
+    left: 25%;
+}
+
+
+
+#botonSoluciones{
+
+    position: absolute;
+    left: 55%;
+    visibility: hidden;
+}
+
+#soluciones{
+
+    height: 15%;
+
+
+
+}
+
+/*-----------------RESPONSIVE---------------------*/
+
+@media screen and (max-width: 500px) {
+
+    section{
+
+        border-radius: 5px;
+        background-color: blue;
+        color:white;
+        padding: 3%;
+        box-shadow: 3px 3px 8px black;
+    }
+
+    #cajaTele
+    {
+       
+        display: inline;
+    }
+
+    #cajaNombre
+    {
+        display: inline;
+    }
+
+    #cajaCorreo
+    {
+        display: inline;
+
+    }
+
+    #cajaCiudad
+    {
+        display: inline;
+        
+    }
+
+}
