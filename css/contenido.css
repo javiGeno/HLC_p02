@@ -18,6 +18,8 @@ h1{
     border-color: black;
     border-style: solid;
     box-shadow: 3px 3px 8px black;
+    transform: rotate(2deg);
+    background-image: url("../img/fondo-madera.jpg");
 
 
 }

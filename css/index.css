@@ -194,7 +194,7 @@ embed{
     aside{
         left: -3%;
         top: 30%;
-        height: 13.1%;
+        height: 25.5%;
         z-index: 1;
         transition: all 0.5s linear;
     }
@@ -205,7 +205,47 @@ embed{
 
     }
 
+    .listaIconos li ul{
+        position: absolute;
+        right: -200%;
+        top: 10%;
+        visibility: hidden;
+        width: 170%;
+        transition: all 0.5s linear;
+        height: -100%;
+        
+    }
+
 }
+
+
+@media screen and (max-width: 400px) {
+
+    
+    
+    aside{
+        left: -3%;
+        top: 30%;
+        height: 23.1%;
+        z-index: 1;
+        transition: all 0.5s linear;
+    }
+
+
+
+    .listaIconos li ul{
+        position: absolute;
+        right: -270%;
+        top: 10%;
+        visibility: hidden;
+        width: 220%;
+        transition: all 0.5s linear;
+        height: -100%;
+        
+    }
+
+}
+
 
 
 @media screen and (max-height: 466px) {
