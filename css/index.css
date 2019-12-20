@@ -127,7 +127,7 @@ nav {
     
     background: linear-gradient(to right , black, rgb(112, 114, 112));
     height: 12%; 
-    width: 98%;
+    width: 100%;
     border-bottom: 1px solid rgb(136, 136, 136);
     position: absolute;
     padding: 5px;
@@ -149,8 +149,8 @@ footer{
     position: absolute;
     background: linear-gradient(to right , black, rgb(112, 114, 112));
     height: 10%; 
-    width: 99%;
-    bottom: 0%;
+    width: 100%;
+    bottom: -1%;
     border-top: 1px solid rgb(136, 136, 136);
     box-shadow: 0px -3px 8px black;
 }
@@ -166,38 +166,84 @@ footer p, a{
 
 embed{
     position: absolute;
-    top: 90px;
+    top: 60px;
     left: 6%;
     width: 93%;
-    height: 77%;
+    height: 85%;
     z-index: 0;
     border-radius: 30px;
 }
 
 /*-----------------RESPONSIVE---------------------*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-height: 466px) {
 
-    nav {
-        background: linear-gradient(to right , black, rgb(254, 255, 254));
+         footer{
+
+            position: absolute;
+            background: linear-gradient(to right , rgb(136, 136, 136));
+            height: 10%; 
+            width: 99%;
+            bottom: 0%;
+            border-top: 1px solid rgb(136, 136, 136);
+            box-shadow: 0px -3px 8px black;
+            display: none;
+         }
+
+        nav {
+        
+        
+            background: linear-gradient(to right , black, rgb(136, 136, 136));
+            height: 15%; 
+            width: 98%;
+            border-bottom: 1px solid rgb(136, 136, 136); 
+            position: absolute;
+            padding: 5px;
+            box-shadow: 0px 3px 8px black;
+            z-index: 1;
+        }
+        
+        .listaIconos li ul{
+        
+        
+            position: absolute;
+            right: -500%;
+            top: 10%;
+            visibility: hidden;
+            width: 300%;
+            transition: all 0.5s linear;
+            height: -100%;
+            
+        }
+    
+        aside {
+            background-color: black;
+            width: 5%;
+            position: absolute;
+            top:17.5%;
+            height: 106%;
+            border-right: 1px solid rgb(136, 136, 136);
+            border-bottom: 1px solid rgb(136, 136, 136);
+            box-shadow: 3px 0px 8px black;
+            
+        }
+
+        embed{
+            position: absolute;
+            top: 60px;
+            left: 6%;
+            width: 93%;
+            height: 110%;
+            z-index: 0;
+            border-radius: 30px;
+        }
+    
        
-        
+
+        #tituloNav {
+            color:white;
+            text-shadow: 15px 10px 2px black;
+            font-size: 20px;
+        }
+    
     }
-
-    
-    .listaIconos li ul{
-    
-    
-        position: absolute;
-        right: -500%;
-        top: 10%;
-        visibility: hidden;
-        width: 300%;
-        transition: all 0.5s linear;
-        height: -100%;
-        
-    }
-
-
-
-}
