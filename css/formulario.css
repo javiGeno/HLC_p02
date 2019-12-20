@@ -1,12 +1,12 @@
-#form2 label{
-    display: block;
-    margin-bottom: 1%;
-}
 
-#form2 [type="radio"]
-{
-    margin-left: 3%;
 
+section{
+
+    border-radius: 5px;
+    background-color: rgb(247, 244, 244);
+    color:black;
+    padding: 3%;
+    box-shadow: 3px 3px 8px black;
 }
 
 fieldset
@@ -16,11 +16,16 @@ fieldset
     
 }
 
-#field2 button{
+#field1
+{
+    height: 30%;
+    
+}
 
-    margin-top: 10%;
-    width: 20%;
-    height: 10%;
+#field2
+{
+    height: 65%;
+    
 }
 
 #form1{
@@ -29,11 +34,6 @@ fieldset
     position: relative;
 }
 
-section
-{
-    
-    height: 100%;
-}
 
 
 #form1 *
@@ -54,34 +54,122 @@ section
 #form1 [type="submit"]{
    
     position:absolute;
-    top: 70%;
-    right: 40%;
+    top: 80%;
+    right: 45%;
+    width: 15%;
+    height: 20%;
  }
 
+ 
 
-#cajaTele
+.cajaDatos
 {
     float:left;
     width: 40%;
 }
 
-#cajaNombre
+.cajaDatos *
 {
-   float:left;
-   width: 40%;
+    width: 45%;
 }
 
-#cajaCorreo
+
+#form2
 {
-    float:left;
-    width: 40%;
+    visibility: visible;
+    position:relative;
+}
+
+#form2 label{
+    display: block;
+    margin-bottom: 1%;
+}
+
+#form2 [type="radio"]
+{
+    margin-left: 3%;
 
 }
 
-#cajaCiudad
+#form2 [type="button"]
 {
-    float:left;
-    width: 40%;
+    bottom: -10%;
+    font-family: 'Lato', sans-serif;
+    width: 20%;
+    height: 5%;
+}
+
+
+#calificacion{
+
+    position: absolute;
+    left: 25%;
+}
+
+
+
+#botonSoluciones{
+
+    position: absolute;
+    left: 55%;
+    visibility: hidden;
+}
+
+#soluciones{
+
+    height: 15%;
+
+
+
+}
+
+/*-----------------RESPONSIVE---------------------*/
+
+@media screen and (max-width: 884px) {
+
+
+    .cajaDatos
+    {
+       display: block;
+       width: 100%;
+    }
+
+    #form1 [type="submit"]{
+   
+        position:absolute;
+        font-size: 50%;
+        top: 110%;
+        right: 40%;
+        width: 20%;
+        height: 10%;
+    }
+
+    #field1
+    {
+    height: 200px;
     
-}
+    }
 
+    #field2
+    {
+        height: 700px;
+        
+    }
+
+    #soluciones{
+
+        height: 15%;
+    
+    
+    
+    }
+
+    #botonSoluciones{
+
+        position: absolute;
+        left: 55%;
+        visibility: hidden;
+        font-size: 12px;
+    }
+     
+}
