@@ -19,6 +19,8 @@
     la página y por tanto volveria a ocultar el examen. No encontré ninguna forma de mantener los atributos de validacion
     html y que no se refrescara la pagina al comprobar que todos los datos estaban correctos. Por tanto, decidimos que 
     los dos formularios fueran independientes-->
+
+    pattern="[A-Z a-z]{4-16}"
    
      <section id="principal">
             <fieldset id="field1">
@@ -26,7 +28,7 @@
                 <form name="usuario"  id="form1">
                     <div class="cajaDatos">
                         <label id="n">Nombre</label>
-                        <input type="text" id="nom" pattern="[A-Za-z]{4-16}" name="nombre"  autofocus required/>
+                        <input  type="text" id="nom"  name="nombre"/>
                     </div>
                     <div class="cajaDatos">
                         <label id="t">Teléfono</label>
@@ -149,6 +151,7 @@
             if(!erroresDatos){
                 obtenerResultadosExamen();
                 alert("Has acertado "+examen.Acertadas+" preguntas");
+                console.log("El usuario ha acertado "+examen.Acertadas+" preguntas");
                 document.getElementById("botonSoluciones").style.visibility='visible';
             }
         }
@@ -156,18 +159,24 @@
 
         function mostrarSoluciones()
         {
-            document.getElementById("soluciones").innerHTML='<p>'+'SOLUCIONES'+'</p>';
+           
             document.getElementById("soluciones").style.padding='5%';
             document.getElementById("soluciones").style.border='solid';
-            document.getElementById("soluciones").style.color='white';
+            document.getElementById("soluciones").style.color='black';
             document.getElementById("soluciones").innerHTML=cadenaSoluciones;
             
         }
 
+        function autofoco()
+        {
+            document.getElementById('nom').focus();
+        }
+        
        
         document.getElementById("calificacion").addEventListener("click", muestraUsuario, false); 
         document.getElementById("form1").addEventListener("invalid", comprobarError, true);  
         document.getElementById("botonSoluciones").addEventListener('click', mostrarSoluciones, false);
+        window.addEventListener('load', autofoco);
         
     </script>
 	
