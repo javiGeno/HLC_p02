@@ -1,0 +1,175 @@
+
+
+section{
+
+    border-radius: 5px;
+    background-color: rgb(247, 244, 244);
+    color:black;
+    padding: 3%;
+    box-shadow: 3px 3px 8px black;
+}
+
+fieldset
+{
+    padding: 2%;
+    margin: 10%;
+    
+}
+
+#field1
+{
+    height: 30%;
+    
+}
+
+#field2
+{
+    height: 65%;
+    
+}
+
+#form1{
+    
+    height: 150px;
+    position: relative;
+}
+
+
+
+#form1 *
+{
+    margin: 1%;
+}
+
+#form1 label{
+    margin-right: 0%;
+    
+}
+
+#form1 div input, select{
+   float: right;
+
+}
+
+#form1 [type="submit"]{
+   
+    position:absolute;
+    top: 80%;
+    right: 45%;
+    width: 15%;
+    height: 20%;
+ }
+
+ 
+
+.cajaDatos
+{
+    float:left;
+    width: 40%;
+}
+
+.cajaDatos *
+{
+    width: 45%;
+}
+
+
+#form2
+{
+    visibility: visible;
+    position:relative;
+}
+
+#form2 label{
+    display: block;
+    margin-bottom: 1%;
+}
+
+#form2 [type="radio"]
+{
+    margin-left: 3%;
+
+}
+
+#form2 [type="button"]
+{
+    bottom: -10%;
+    font-family: 'Lato', sans-serif;
+    width: 20%;
+    height: 5%;
+}
+
+
+#calificacion{
+
+    position: absolute;
+    left: 25%;
+}
+
+
+
+#botonSoluciones{
+
+    position: absolute;
+    left: 55%;
+    visibility: hidden;
+}
+
+#soluciones{
+
+    height: 15%;
+
+
+
+}
+
+/*-----------------RESPONSIVE---------------------*/
+
+@media screen and (max-width: 884px) {
+
+
+    .cajaDatos
+    {
+       display: block;
+       width: 100%;
+    }
+
+    #form1 [type="submit"]{
+   
+        position:absolute;
+        font-size: 50%;
+        top: 110%;
+        right: 40%;
+        width: 20%;
+        height: 10%;
+    }
+
+    #field1
+    {
+    height: 200px;
+    
+    }
+
+    #field2
+    {
+        height: 700px;
+        
+    }
+
+    #soluciones{
+
+        height: 15%;
+    
+    
+    
+    }
+
+    #botonSoluciones{
+
+        position: absolute;
+        left: 55%;
+        visibility: hidden;
+        font-size: 12px;
+    }
+     
+}

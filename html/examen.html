@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	
+	
+    <meta charset="utf-8"/>
+    <link rel="icon" href="../img/cursos.png" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/contenido.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/formulario.css'>
+	<title>Examen</title>
+	
+	
+</head>
+<body>
+
+    <!--Nuestra idea era que si los datos del 1er formulario estaban bien, apareciera el 2º( el examen), si no, 
+    que se mantuviera en oculto. Para utilizar atributos de validacion html, es necesario un submit que refrescaría
+    la página y por tanto volveria a ocultar el examen. No encontré ninguna forma de mantener los atributos de validacion
+    html y que no se refrescara la pagina al comprobar que todos los datos estaban correctos. Por tanto, decidimos que 
+    los dos formularios fueran independientes-->
+   
+     <section id="principal">
+            <fieldset id="field1">
+                <legend>DATOS USUARIO</legend>
+                <form name="usuario"  id="form1">
+                    <div class="cajaDatos">
+                        <label id="n">Nombre</label>
+                        <input type="text" id="nom" pattern="[A-Za-z]{4-16}" name="nombre"  autofocus required/>
+                    </div>
+                    <div class="cajaDatos">
+                        <label id="t">Teléfono</label>
+                        <input type="tel" id="tel" pattern="[0-9]{9}" maxlength="9" name="Teléfono" />
+                    </div>
+                    <div class="cajaDatos">
+                        <label id="ce">Correo electrónico</label>
+                        <input type="email"  id="email" name="email" placeholder="example@mail.com" maxlength="50" required/>
+                    </div>
+                    <div class="cajaDatos">
+                        <label id="c">Ciudad</label>
+                        <select name="ciudades" id="ciud">
+                            <option value="defecto" selected>--Elegir opción--</option>
+                            <option value="Sevilla">Sevilla</option>
+                            <option value="Huelva">Huelva</option>
+                            <option value="Cádiz">Cádiz</option>
+                            <option value="Málaga">Málaga</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Jaén">Jaén</option>
+                            <option value="Granada">Granada</option>
+                            <option value="Almería">Almería</option>
+                        </select>
+                    </div>
+                    <input type="submit" id="datos" name="datos" value="Enviar datos" />
+
+                </form>
+            </fieldset>
+
+            <fieldset  id="field2">
+                <legend>RESPONDE A LAS PREGUNTAS</legend>
+                <form name="examen" method="get" id="form2">
+                    <label>1-¿Qué es html?</label>
+                    <input type="radio" class="correcta" name=1 />HyperText Markup Language<br/>
+                    <input type="radio" name=1 />HyperText Mark Lang<br/>
+                    <input type="radio" name=1 />Hyper Mark Language<br/>
+                    <br/>
+                    <label>2-¿Que nuevas etiquetas incorpora HTML5?</label>
+                    <input type="radio" name=2 />&lt;div&gt; , &lt;img&gt; , &lt;body&gt;<br/>
+                    <input type="radio" class="correcta" name=2 />&lt;audio&gt; , &lt;video&gt; , &lt;canvas&gt;<br/>
+                    <input type="radio" name=2 />&lt;audio&gt; , &lt;video&gt; , &lt;div&gt;<br/>
+                    <br/>
+                    <label>3-Funcionalidad de CSS</label>
+                    <input type="radio" class="correcta" name=3 />CSS3 sirve para cambiar el aspecto de un sitio web, desde las medidas para los márgenes hasta 
+                    las especificaciones para las imágenes y el texto<br/>
+                    <input type="radio"  name=3 />CSS3 sirve para colocar texto en una página web<br/>
+                    <input type="radio"  name=3 />Las dos opciones anteriores son incorrectas<br/>
+                    <br/>
+                    <label>4-¿Cuales son selectores css?</label>
+                    <input type="radio" class="correcta" name=4 /> # , . , h1<br/>
+                    <input type="radio" name=4 />¿ , . , *<br/>
+                    <input type="radio" name=4 />1 , 2 , 3<br/>
+                    <br/>
+                    <label>5-JavaScript sirve para:</label>
+                    <input type="radio" name=5 />Especificar el diseño, el estilo y la alineación de las páginas web.<br/>
+                    <input type="radio" class="correcta" name=5 />Mejorar la forma en que se comportan las páginas web<br/>
+                    <input type="radio" name=5 />Permitir agregar contenido a una página web<br/>
+                    <br/>
+                    <label>6-¿En que año parecio JavaScript?</label>
+                    <input type="radio" name=6 />1990<br/>
+                    <input type="radio" name=6 />2000<br/>
+                    <input type="radio" class="correcta" name=6 />1995<br/>
+                    
+                    <input type="button" id="calificacion" name="datos" value="Calificación" />
+                    <input type="button" id="botonSoluciones" name="datos" value="Mostrar soluciones" />
+                 
+            </form>
+
+        </fieldset>
+        <article id="soluciones">
+
+        </article>
+	</section>
+        
+    <script>
+        
+        var erroresDatos=false;
+        var lista= document.querySelectorAll('.correcta');
+        var cadenaSoluciones="";
+        
+        var examen={
+            Acertadas:0,
+            soluciones:[
+                    '1- HyperText Markup Language',
+                    '2- &lt;audio&gt; , &lt;video&gt; , &lt;canvas&gt',
+                    '3- CSS3 sirve para cambiar el aspecto de un sitio web, desde las medidas para los márgenes hasta las especificaciones para las imágenes y el texto',
+                    '4- # , . , h1',
+                    '5- Mejorar la forma en que se comportan las páginas web',
+                    '6- 1995'
+            ]
+
+	    };
+
+
+
+        function comprobarError(e)
+        {
+            alert("Error en campo "+e.target.name);
+        }
+
+        function obtenerResultadosExamen()
+        {
+            let acierto=0;
+
+            for (i=0; i<lista.length; i++) {
+                if (lista[i].checked) {
+                    acierto++;
+                }
+
+                cadenaSoluciones+=examen.soluciones[i]+'<br/>';
+            }
+
+           
+
+            examen.Acertadas=acierto;
+
+        }
+
+        function muestraUsuario(){
+
+            if(!erroresDatos){
+                obtenerResultadosExamen();
+                alert("Has acertado "+examen.Acertadas+" preguntas");
+                document.getElementById("botonSoluciones").style.visibility='visible';
+            }
+        }
+        
+
+        function mostrarSoluciones()
+        {
+            document.getElementById("soluciones").innerHTML='<p>'+'SOLUCIONES'+'</p>';
+            document.getElementById("soluciones").style.padding='5%';
+            document.getElementById("soluciones").style.border='solid';
+            document.getElementById("soluciones").style.color='white';
+            document.getElementById("soluciones").innerHTML=cadenaSoluciones;
+            
+        }
+
+       
+        document.getElementById("calificacion").addEventListener("click", muestraUsuario, false); 
+        document.getElementById("form1").addEventListener("invalid", comprobarError, true);  
+        document.getElementById("botonSoluciones").addEventListener('click', mostrarSoluciones, false);
+        
+    </script>
+	
+          	
+			
+
+</body>
+
+</html>

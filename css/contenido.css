@@ -1,0 +1,54 @@
+
+body{
+
+    font-family: 'Lato', sans-serif;
+    background-color:darkgray;
+    
+}
+
+h1{
+
+    text-align: center;
+    text-shadow: 3px -4px white; 
+    font-size: 50px;
+    color: black;
+    margin: 3%;
+    background-color: darkgray;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 3px 3px 8px black;
+
+
+}
+
+section{
+
+    border-radius: 5px;
+    background-color: rgb(247, 244, 244);
+    color:black;
+    padding: 3%;
+    box-shadow: 3px 3px 8px black;
+   
+}
+
+/*----------------------------CSS videos-----------------------------*/
+
+#videoHTML{
+
+    border:1.5px solid black;
+    width: 30%;
+    height: 20%;
+    margin-left: 35%;
+    margin-top: 5%;
+    z-index: 100;
+    background-color: black;
+
+    
+}
+
+button{
+    display: block;
+    margin-left: 46%;
+
+}

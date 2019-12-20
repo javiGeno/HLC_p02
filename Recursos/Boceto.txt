@@ -1,0 +1,15 @@
+#Pagina principal
+	Tendrá una pagina de bienvenida explicando de que va la página
+
+	El aside será un menú desplegable el cuál contendrá iconos con enlaces a distintos sitios, (Página principal, herramientas html, H.Css, H.JavaScript)
+
+#Cada curso
+	Se mantiene el aside igual pero ahora el nav podrá el título y número de leccion por la que va. Además tiene el boton de ir a examen en cualquier momento
+
+#Cada examen
+	Se oculta el aside y se cambia el título del nav. En el nav se mostrará un una cuenta atrás para hacer el examen. Si hay tiempo, el usuario puede validar las respuestas y ver si ha aprobado.
+
+	#Se muestra si aprobó o no y el número de respuestas correctas. Se le muestran 2 botones: Volver a la página principal o reintentar el examen (Vuelve a proner el examen)
+
+
+-El footer muestra la información de los 2 autores en todo momento y el validador de w3s
