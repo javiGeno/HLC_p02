@@ -176,19 +176,12 @@ embed{
 
 /*-----------------RESPONSIVE---------------------*/
 
-<<<<<<< HEAD
-@media screen and (max-width: 884px) {
 
-    
-    
-    .listaIconos li ul{
-=======
 @media screen and (max-width: 500px) {
 
     nav, footer{
         display: none;       
     }
->>>>>>> 6f6625542fa7c58d5bcc2c660207b599eb150c6a
     
     embed{
         top: 1%;
@@ -205,21 +198,11 @@ embed{
         z-index: 1;
         transition: all 0.5s linear;
     }
-<<<<<<< HEAD
 
-    aside {
-        background-color: rgb(212, 26, 26);
-        width: 5%;
-        position: absolute;
-        top:25.5%;
-        height: 1000px;
-        border-right: 1px solid rgb(136, 136, 136);
-        border-bottom: 1px solid rgb(136, 136, 136);
-        box-shadow: 3px 0px 8px black;
-        
-        
-        
+  aside:hover{
+        left: 0%;
     }
+
 
 
 
@@ -229,13 +212,6 @@ embed{
 @media screen and (max-height: 466px) {
 
          footer{
-=======
-    
-    aside:hover{
-        left: 0%;
-    }
->>>>>>> 6f6625542fa7c58d5bcc2c660207b599eb150c6a
-
             position: absolute;
             background: linear-gradient(to right , rgb(136, 136, 136));
             height: 10%; 
@@ -247,8 +223,6 @@ embed{
          }
 
         nav {
-        
-        
             background: linear-gradient(to right , black, rgb(136, 136, 136));
             height: 15%; 
             width: 98%;
@@ -260,8 +234,6 @@ embed{
         }
         
         .listaIconos li ul{
-        
-        
             position: absolute;
             right: -200%;
             top: 10%;
@@ -294,8 +266,6 @@ embed{
             border-radius: 30px;
         }
     
-       
-
         #tituloNav {
             color:white;
             text-shadow: 15px 10px 2px black;
