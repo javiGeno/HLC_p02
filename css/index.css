@@ -127,7 +127,7 @@ nav {
     
     background: linear-gradient(to right , black, rgb(112, 114, 112));
     height: 12%; 
-    width: 100%;
+    width: 99%;
     border-bottom: 1px solid rgb(136, 136, 136);
     position: absolute;
     padding: 5px;
@@ -176,6 +176,42 @@ embed{
 
 /*-----------------RESPONSIVE---------------------*/
 
+@media screen and (max-width: 884px) {
+
+    
+    
+    .listaIconos li ul{
+    
+    
+        position: absolute;
+        right: -500%;
+        top: 10%;
+        visibility: hidden;
+        width: 300%;
+        transition: all 0.5s linear;
+        height: -100%;
+        
+    }
+
+    aside {
+        background-color: rgb(212, 26, 26);
+        width: 5%;
+        position: absolute;
+        top:25.5%;
+        height: 1000px;
+        border-right: 1px solid rgb(136, 136, 136);
+        border-bottom: 1px solid rgb(136, 136, 136);
+        box-shadow: 3px 0px 8px black;
+        
+        
+        
+    }
+
+
+
+}
+
+
 @media screen and (max-height: 466px) {
 
          footer{
@@ -207,10 +243,10 @@ embed{
         
         
             position: absolute;
-            right: -500%;
+            right: -200%;
             top: 10%;
             visibility: hidden;
-            width: 300%;
+            width: 150%;
             transition: all 0.5s linear;
             height: -100%;
             
