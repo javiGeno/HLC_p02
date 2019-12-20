@@ -20,7 +20,7 @@
     html y que no se refrescara la pagina al comprobar que todos los datos estaban correctos. Por tanto, decidimos que 
     los dos formularios fueran independientes-->
 
-    pattern="[A-Z a-z]{4-16}"
+    
    
      <section id="principal">
             <fieldset id="field1">
@@ -28,7 +28,7 @@
                 <form name="usuario"  id="form1">
                     <div class="cajaDatos">
                         <label id="n">Nombre</label>
-                        <input  type="text" id="nom"  name="nombre"/>
+                        <input  type="text" id="nom" pattern="[A-Z a-z]{4-16}" name="nombre"/>
                     </div>
                     <div class="cajaDatos">
                         <label id="t">Teléfono</label>
